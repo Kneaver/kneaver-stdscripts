@@ -1,0 +1,32 @@
+{
+  "name": "kneaver-stdscripts",
+  "version": "2.0.70",
+  "description": "NodeJS library common to many of Kneaver's apps",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">=4.2.2",
+    "npm": ">=2.14.12"
+  },
+  "os": [
+    "win32",
+    "linux",
+    "darwin"
+  ],
+  "config": {
+    "link": true
+  },
+  "dependencies": {
+    "kneaver-stdjs": "file:../kneaver-stdjs",
+    "moment-timezone": "^0.5.33",
+    "nodemailer": "^6.6.0",
+    "timezone-js": "^0.4.13",
+    "tzdata": "^1.0.25"
+  },
+  "ignoreDependencies": {
+    "KNVNode": "file:../KNVRT/KNVNode",
+    "kneaver-stdclient": "file:../kneaver-stdclient"
+  }
+}
